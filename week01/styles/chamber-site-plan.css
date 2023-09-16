@@ -1,0 +1,48 @@
+:root {
+    --white: #E9F1F7;
+    --primary: #483519;
+    --secondary: #6F7C12;
+    --accent1: #AAD922;
+    --accent2: #2274A5;
+}
+
+li:has(strong){
+    margin-top: 0.5rem;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Karla', sans-serif;
+}
+
+#colorGrid{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#colorGrid > div{
+    padding: 1rem;
+    text-align:center;
+}
+
+    #colorGrid > .white {
+        background-color: var(--white);
+    }
+    #colorGrid > .primary {
+        background-color: var(--primary);
+        color: white;
+    }
+    #colorGrid > .secondary {
+        background-color: var(--secondary);
+        color: white;
+    }
+    #colorGrid > .accent1 {
+        background-color: var(--accent1);
+    }
+    #colorGrid > .accent2 {
+        background-color: var(--accent2);
+        color: white;
+    }
