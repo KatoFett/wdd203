@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1A535C;
+    --secondary: #4ECDC4;
+    --accent1: #EBD2B4;
+    --accent2: #8D5B4C;
+    --white: #F7FFF7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+
+main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: auto auto;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+
+img {
+    -moz-box-shadow: 0px 0px 20px black;
+    -webkit-box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px black;
+}
+
+h1 {
+    display: inline-block;
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+    nav > ul {
+        list-style: none;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        -webkit-text-decoration: none;
+        text-decoration: inherit;
+        padding: 0.75rem;
+        font-size: 1.25rem;
+    }
+
+        nav a:hover {
+            background-color: var(--accent1);
+        }
+
+        nav a.active {
+            background-color: var(--accent2);
+            color: white;
+        }
+
+.card {
+    -moz-border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    -moz-box-shadow: 0px 0px 20px black;
+    -webkit-box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px black;
+}
+
+    .card ul {
+        list-style: none;
+        margin: 1rem;
+    }
+
+    .card h3 {
+        text-align: center;
+        background: var(--primary);
+        color: white;
+        padding: 0.5rem;
+    }
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+    footer #lastModified {
+        color: var(--accent1);
+    }
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin: 1rem;
+}
+
+a[href] {
+    color: blue;
+}
