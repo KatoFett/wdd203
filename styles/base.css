@@ -10,7 +10,7 @@
     --primary: #1A535C;
     --secondary: #4ECDC4;
     --accent1: #EBD2B4;
-    --accent2: #8D5B4C;
+    --accent2: #5E4955;
     --white: #F7FFF7;
 }
 
@@ -24,7 +24,7 @@ main {
     margin: 0 auto;
     padding: 1rem;
     display: grid;
-    grid-gap: 1rem;
+    gap: 1rem;
     -webkit-justify-content: center;
     justify-content: center;
 }
@@ -38,7 +38,7 @@ header {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    grid-gap: 2rem;
+    gap: 2rem;
     padding: 1rem;
 }
 
