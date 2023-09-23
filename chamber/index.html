@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rexburg Chamber of Commerce</title>
+    <meta name="description" content="(Un)official webpage for the Rexburg Chamber of Commerce">
+    <meta name="author" content="Aaron Fox">
+    <meta property="og:title" content="Rexburg Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://katofett.github.io/wdd230/chamber/images/tetons.jpg">
+    <meta property="og:url" content="https://katofett.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Karla">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/coc.png" alt="Rexburg CoC Logo" />
+        <h1>Rexburg Chamber of Commerce</h1>
+        <button id="navMenu"></button>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <section id="hero">
+        <h2>Rexburg Chamber of Commerce</h2>
+        <h3>
+            The Rexburg Chamber of Commerce is a growing community for local businesses to get and grow together.
+            Become part of a big family and develop many connections, participate in promotions and events, and much more!
+        </h3>
+        <a href="join.html">Join Now!</a>
+    </section>
+    <section id="spotlight">
+        <h2>Business Spotlight</h2>
+        <div>
+            <p>One man's trash is another man's treasure.</p>
+            <strong>McDonald's</strong>
+            <img src="images/mcdonalds.jpg" alt="McDonald's building" />
+        </div>
+        <div>
+            <p>A labyrinth of aisles with misplaced items, guaranteed to hide that one item you need.</p>
+            <strong>Wal-Mart</strong>
+            <img src="images/walmart.jpg" alt="Wal-Mart logo" />
+        </div>
+    </section>
+    <section id="promotions">
+        <section id="upcomingEvents">
+            <h2>Upcoming Events</h2>
+            <div>
+                <img alt="Event picture" />
+                <h3>Event Title</h3>
+                <h4>August 25, 2023 8:00am - 9:00am</h4>
+                <h4>6523 Somewhere Ln</h4>
+                <p>Come join us and do something. We'll have Little Caesar's and not enough tables.</p>
+            </div>
+            <div>
+                <img alt="Event picture" />
+                <h3>Trick or Treating</h3>
+                <h4>October 30, 2023 7:00pm - 2:30am</h4>
+                <h4>7982 Spooky Rd</h4>
+                <p>Yes, we will be trick-or-treating for over 6 hours consecutively. Doors will be closed and locked until the event is over.</p>
+            </div>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="https://accuweather.com/images/weathericons/1.svg" alt="Sunny" />
+            <h3>61&deg;F</h3>
+            <h3>Sunny, 70% humidity</h3>
+        </section>
+    </section>
+    <footer>
+        <h4>Rexburg Chamber of Commerce - WDD 230 Project</h4>
+        <p><a href="tel:134567890">(123) 456-7890</a> &bull; <a href="mailto:rexburgcoc@hotmail.com">rexburgcoc@hotmail.com</a></p>
+        <p id="lastModified"></p>
+        <h4>&copy; Copyright Aaron Fox <span id="year"></span></h4>
+    </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

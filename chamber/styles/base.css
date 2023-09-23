@@ -1,0 +1,215 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #483519;
+    --secondary: #6F7C12;
+    --accent1: #AAD922;
+    --accent2: #2274A5;
+    --white: #e7dac6;
+    --black: #222;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: var(--white);
+    font-size: 1.15rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+    header > img {
+        box-shadow: 0px 0px 10px black;
+        border-radius: 50%;
+        padding: 0.5rem;
+        background-color: white;
+    }
+
+nav {
+    background-color: var(--black);
+    display: none;
+}
+
+    nav.open {
+        display: block;
+    }
+
+    nav > ul {
+        list-style: none;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        padding: 1rem;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+            background-color: var(--accent1);
+            color: black;
+            font-weight: bold;
+        }
+
+    nav li.active {
+        background-color: var(--secondary);
+    }
+
+#navMenu {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    background-color: var(--white);
+    border-color: var(--primary);
+    border-radius: 0.5rem;
+}
+
+    #navMenu::after {
+        content: '≡';
+    }
+
+    #navMenu.open::after {
+        content: '×';
+    }
+
+#hero {
+    background-image: url('../images/tetons.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+    #hero > h2, #hero > h3 {
+        text-shadow: 0px 0px 15px black, 3px 3px 3px black;
+        margin: 1rem 0;
+        color: white;
+    }
+
+    #hero > a {
+        background-color: var(--accent2);
+        padding: 1rem;
+        display: inline-block;
+        margin-top: 4rem;
+        border-radius: 0.5rem;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0px 0px 15px black;
+        transition: all ease-out 0.15s;
+    }
+
+        #hero > a:hover {
+            box-shadow: 10px 10px 30px black;
+            transform: scale(1.05);
+        }
+
+section > h2 {
+    text-align: center;
+}
+
+#spotlight {
+    margin: 1rem;
+}
+
+    #spotlight > h2 {
+        grid-column: 1/3;
+    }
+
+    #spotlight > div {
+        background-color: var(--primary);
+        border: 1px solid var(--black);
+        display: grid;
+        grid-template: auto auto / 1fr auto;
+        padding: 1rem;
+        color: white;
+        box-shadow: 0px 0px 10px black;
+        margin: 2rem;
+    }
+
+    #spotlight img {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+
+    #spotlight strong {
+        align-self: end;
+    }
+
+#upcomingEvents {
+    background-color: var(--accent1);
+    overflow: auto;
+}
+
+    #upcomingEvents > h2 {
+        color: black;
+    }
+
+    #upcomingEvents > div {
+        margin: 1rem;
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+
+#weather {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+    #weather > img {
+        width: 25%;
+        margin: 2rem 0;
+    }
+
+hr {
+    margin: 1rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+footer a{
+    color: white;
+}
