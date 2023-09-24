@@ -170,18 +170,20 @@ section > h2 {
     }
 
 #upcomingEvents {
-    background-color: var(--accent1);
+    background-color: var(--secondary);
     overflow: auto;
 }
 
     #upcomingEvents > h2 {
-        color: black;
+        color: white;
+        margin: 1rem 0;
     }
 
     #upcomingEvents > div {
         margin: 1rem;
         border: 1px solid black;
         padding: 0.5rem;
+        background-color: var(--accent1);
     }
 
 #weather {
