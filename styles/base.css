@@ -29,13 +29,17 @@ body {
 }
 
 main {
-    max-width: 768px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 1rem;
     display: grid;
     gap: 1rem;
     justify-content: center;
 }
+
+    main > * {
+        grid-column: 1/2;
+    }
 
 header {
     background-color: var(--primary);
@@ -155,10 +159,35 @@ body.dark a[href] {
     }
 
 
-#toggleDarkModeButton{
-    position:absolute;
+#toggleDarkModeButton {
+    position: absolute;
     right: 1rem;
     width: 6rem;
     height: 2rem;
     color: black;
+}
+
+#hero {
+    position: relative;
+}
+
+    #hero img {
+        width: 100%;
+        box-shadow: none;
+    }
+
+#heroLabel {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffffff77;
+    background-color: #ffffff33;
+    font-family: 'Brush Script MT';
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+
+#gmaps {
+    grid-column: 1/3;
 }

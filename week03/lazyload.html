@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazy Load </title>
+    <meta name="description" content="Lazy-loading images example">
+    <meta name="author" content="Aaron Fox">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header><h1>Lazy Loading Example</h1></header>
+    <main>
+        <picture>
+            <img src="https://via.placeholder.com/400x600/" alt="Placeholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x500/" alt="Placeholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/400x400/" alt="Placeholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/500x600/" alt="Placeholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/500x500/" alt="Placeholder image" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://via.placeholder.com/500x400/" alt="Placeholder image" loading="lazy">
+        </picture>
+    </main>
+    <footer><p>Last Modified: <span id="lastModified"></span></p></footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>

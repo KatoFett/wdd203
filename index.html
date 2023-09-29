@@ -32,6 +32,15 @@
         </ul>
     </nav>
     <main>
+        <div id="hero">
+            <picture>
+                <source media="(min-width: 450px)" srcset="images/temple.webp" />
+                <img src="images/temple-small.webp" />
+            </picture>
+            <div id="heroLabel">
+                <p>São Paulo Brazil Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activites</h3>
@@ -43,7 +52,7 @@
                     Week 02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/KatoFett/pen/qBLpGYm">Hamburger Pen</a> | <a href="week02/bom.html">BoM</a>
                 </li>
                 <li>
-                    Week 03:
+                    Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">localStorage</a>
                 </li>
                 <li>
                     Week 04:
@@ -64,9 +73,10 @@
             <div class="text-center">
                 <p>Rexburg, Idaho</p>
                 <p>76&deg; F - Sunshine</p>
-                <p>Page Visits: 0</p>
+                <p>Page Visits: <span id="pageVisits"></span></p>
             </div>
         </section>
+        <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49649.47625370257!2d-104.59590742815465!3d38.94472049541648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x871333c80a0d9aa9%3A0x490cfece10bcb684!2sFalcon%2C%20CO%2080831!5e0!3m2!1sen!2sus!4v1695956644554!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Aaron Fox &bull; United States</p>
@@ -75,5 +85,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/dark.js"></script>
+    <script src="scripts/pageCounter.js"></script>
 </body>
 </html>
