@@ -186,6 +186,7 @@ body.dark a[href] {
     font-family: 'Brush Script MT';
     font-size: 2.5rem;
     white-space: nowrap;
+    color: black;
 }
 
 #gmaps {
