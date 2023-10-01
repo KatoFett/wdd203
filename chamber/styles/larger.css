@@ -44,10 +44,10 @@
 
         #sidebarLayout picture > img {
             transition: transform linear 0.1s;
+            transform-origin: bottom;
         }
 
         #sidebarLayout picture > img:hover {
             transform: scale(1.4);
-            transform-origin: bottom;
         }
 }
