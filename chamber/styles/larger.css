@@ -11,6 +11,7 @@
         display: none;
     }
 
+    /* Index */
     #spotlight {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -34,4 +35,19 @@
     #upcomingEvents p {
         grid-column: 1/3;
     }
+
+    /* Discover */
+    #sidebarLayout {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+        #sidebarLayout picture > img {
+            transition: transform linear 0.1s;
+        }
+
+        #sidebarLayout picture > img:hover {
+            transform: scale(1.4);
+            transform-origin: bottom;
+        }
 }

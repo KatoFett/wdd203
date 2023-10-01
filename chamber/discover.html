@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rexburg Chamber of Commerce</title>
+    <meta name="description" content="(Un)official webpage for the Rexburg Chamber of Commerce">
+    <meta name="author" content="Aaron Fox">
+    <meta property="og:title" content="Rexburg Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://katofett.github.io/wdd230/chamber/images/tetons.jpg">
+    <meta property="og:url" content="https://katofett.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Karla">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/coc.png" alt="Rexburg CoC Logo" />
+        <h1>Rexburg Chamber of Commerce</h1>
+        <button id="navMenu"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="sidebarLayout">
+        <aside>
+            <section class="card">
+                <p id="welcomeMessage"></p>
+            </section>
+            <section class="card">
+                <h2>Demographics</h2>
+                <p>With over 90+ businesses across the area, the Rexburg Chamber of Commerce has hosted more than <strong>800 events</strong> in its 18 years of operation!</p>
+            </section>
+            <section class="card">
+                <h2>Rexburg</h2>
+                <p>Rexburg statistics:</p>
+                <ul>
+                    <li>Elevation: 4,865ft</li>
+                    <li>Population: 35,300 (2021)</li>
+                    <li>Area: 10.1 mi&sup2;</li>
+                </ul>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </aside>
+        <aside>
+            <div class="card">
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/rexburg-2-medium.webp">
+                    <img alt="Green field in Rexburg" src="images/rexburg-2-small.webp" loading="lazy">
+                </picture>
+                <em>Green field in Rexburg</em>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/island-park-medium.webp">
+                    <img alt="Island Park" src="images/island-park-small.webp" loading="lazy">
+                </picture>
+                <em>Island Park</em>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/mesa-falls-medium.webp">
+                    <img alt="Mesa Falls" src="images/mesa-falls-small.webp" loading="lazy">
+                </picture>
+                <em>Mesa Falls</em>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/rexburg-night-medium.webp">
+                    <img alt="Overhead view of Rexburg at night" src="images/rexburg-night-small.webp" loading="lazy">
+                </picture>
+                <em>Rexburg at night</em>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/rexburg-temple-medium.webp">
+                    <img alt="Rexburg Temple at sunset" src="images/rexburg-temple-small.webp" loading="lazy">
+                </picture>
+                <em>Rexburg Temple</em>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/sand-dunes-medium.webp">
+                    <img alt="Saint Anthony Sand Dunes" src="images/sand-dunes-small.webp" loading="lazy">
+                </picture>
+                <em>Saint Anthony Sand Dunes</em>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="images/tetons-medium.webp">
+                    <img alt="Teton Mountains" src="images/tetons-small.webp" loading="lazy">
+                </picture>
+                <em>Teton Mountains</em>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <h4>Rexburg Chamber of Commerce - WDD 230 Project</h4>
+        <p><a href="tel:134567890">(123) 456-7890</a> &bull; <a href="mailto:rexburgcoc@hotmail.com">rexburgcoc@hotmail.com</a></p>
+        <p id="lastModified"></p>
+        <h4>&copy; Copyright Aaron Fox <span id="year"></span></h4>
+    </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

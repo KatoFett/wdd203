@@ -8,7 +8,7 @@
     <meta name="author" content="Aaron Fox">
     <meta property="og:title" content="Rexburg Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://katofett.github.io/wdd230/chamber/images/tetons.jpg">
+    <meta property="og:image" content="https://katofett.github.io/wdd230/chamber/images/tetons.webp">
     <meta property="og:url" content="https://katofett.github.io/wdd230/chamber/index.html">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Karla">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -30,52 +30,54 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <section id="hero">
-        <h2>Rexburg Chamber of Commerce</h2>
-        <h3>
-            The Rexburg Chamber of Commerce is a growing community for local businesses to get and grow together.
-            Become part of a big family and develop many connections, participate in promotions and events, and much more!
-        </h3>
-        <a href="join.html">Join Now!</a>
-    </section>
-    <section id="spotlight">
-        <h2>Business Spotlight</h2>
-        <div>
-            <p>One man's trash is another man's treasure.</p>
-            <strong>McDonald's</strong>
-            <img src="images/mcdonalds.jpg" alt="McDonald's building" />
-        </div>
-        <div>
-            <p>A labyrinth of aisles with misplaced items, guaranteed to hide that one item you need.</p>
-            <strong>Wal-Mart</strong>
-            <img src="images/walmart.jpg" alt="Wal-Mart logo" />
-        </div>
-    </section>
-    <div id="promotions">
-        <section id="upcomingEvents">
-            <h2>Upcoming Events</h2>
-            <div>
-                <img src="images/event01" alt="Event picture" />
-                <h3>Event Title</h3>
-                <h4>August 25, 2023 8:00am - 9:00am</h4>
-                <h4>6523 Somewhere Ln</h4>
-                <p>Come join us and do something. We'll have Little Caesar's and not enough tables.</p>
+    <main>
+        <section id="hero">
+            <h2>Rexburg Chamber of Commerce</h2>
+            <h3>
+                The Rexburg Chamber of Commerce is a growing community for local businesses to get and grow together.
+                Become part of a big family and develop many connections, participate in promotions and events, and much more!
+            </h3>
+            <a href="join.html">Join Now!</a>
+        </section>
+        <section id="spotlight">
+            <h2>Business Spotlight</h2>
+            <div class="card">
+                <p>One man's trash is another man's treasure.</p>
+                <strong>McDonald's</strong>
+                <img src="images/mcdonalds.webp" alt="McDonald's building" />
             </div>
-            <div>
-                <img src="images/event02" alt="Event picture" />
-                <h3>Trick or Treating</h3>
-                <h4>October 30, 2023 7:00pm - 2:30am</h4>
-                <h4>7982 Spooky Rd</h4>
-                <p>Yes, we will be trick-or-treating for over 6 hours consecutively. Doors will be closed and locked until the event is over.</p>
+            <div class="card">
+                <p>A labyrinth of aisles with misplaced items, guaranteed to hide that one item you need.</p>
+                <strong>Wal-Mart</strong>
+                <img src="images/walmart.webp" alt="Wal-Mart logo" />
             </div>
         </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <img src="https://accuweather.com/images/weathericons/1.svg" alt="Sunny" />
-            <h3>61&deg;F</h3>
-            <h3>Sunny, 70% humidity</h3>
-        </section>
-    </div>
+        <div id="promotions">
+            <section id="upcomingEvents">
+                <h2>Upcoming Events</h2>
+                <div>
+                    <img src="images/event01" alt="Event picture" />
+                    <h3>Event Title</h3>
+                    <h4>August 25, 2023 8:00am - 9:00am</h4>
+                    <h4>6523 Somewhere Ln</h4>
+                    <p>Come join us and do something. We'll have Little Caesar's and not enough tables.</p>
+                </div>
+                <div>
+                    <img src="images/event02" alt="Event picture" />
+                    <h3>Trick or Treating</h3>
+                    <h4>October 30, 2023 7:00pm - 2:30am</h4>
+                    <h4>7982 Spooky Rd</h4>
+                    <p>Yes, we will be trick-or-treating for over 6 hours consecutively. Doors will be closed and locked until the event is over.</p>
+                </div>
+            </section>
+            <section id="weather">
+                <h2>Weather</h2>
+                <img src="https://accuweather.com/images/weathericons/1.svg" alt="Sunny" />
+                <h3>61&deg;F</h3>
+                <h3>Sunny, 70% humidity</h3>
+            </section>
+        </div>
+    </main>
     <footer>
         <h4>Rexburg Chamber of Commerce - WDD 230 Project</h4>
         <p><a href="tel:134567890">(123) 456-7890</a> &bull; <a href="mailto:rexburgcoc@hotmail.com">rexburgcoc@hotmail.com</a></p>
