@@ -20,11 +20,15 @@
             grid-column: 1/3;
         }
 
-        main > *{
+        main > * {
             grid-column: auto;
         }
 
     #menu {
         display: none;
+    }
+
+    input {
+        max-width: 20rem;
     }
 }

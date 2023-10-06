@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <meta name="description" content="Form">
+    <meta name="author" content="Aaron Fox">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+</head>
+<body>
+    <header>
+        <button id="menu" type="button"></button>
+        <img src="images/aaron-fox.jpg" alt="Picture of Aaron Fox">
+        <h1>Aaron Fox</h1>
+        <button id="toggleDarkModeButton" type="button">Dark</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <label>Username* <input id="username" name="username" required placeholder="Account username"></label>
+            <label>Password* <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" placeholder="Alphanumeric, 8 characters minimum"></label>
+            <label>
+                Confirm Password*
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <strong id="passwordMsg"></strong>
+            </label>
+            <label>Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+            <label>Page Rating: <span id="rating"></span> <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="10"></label>
+            <input type="submit" value="Create My Account">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Aaron Fox &bull; United States</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

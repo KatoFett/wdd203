@@ -1,0 +1,51 @@
+:root {
+    --invalid: #ffa3a3;
+    --input-background: #d7d7d7;
+    --submit-background: #178920;
+}
+
+main {
+    display: block;
+}
+
+body.dark {
+    --input-background: #222;
+    --submit-background: #8bd191;
+}
+
+label {
+    display: block;
+    margin: 1rem 0;
+}
+
+input {
+    display: block;
+    border-radius: 4px;
+    background-color: var(--input-background);
+    width: 100%;
+}
+
+    input.invalid {
+        background-color: var(--invalid);
+    }
+
+    input:not([type=range]) {
+        padding: .75rem;
+    }
+
+    input:required {
+        border-left: 6px solid red;
+    }
+
+        input:required:valid {
+            border-left: 6px solid green;
+        }
+
+    input[type=submit] {
+        background-color: var(--submit-background);
+        color: var(--white);
+    }
+
+    #passwordMsg{
+        color: red;
+    }
