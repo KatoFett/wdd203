@@ -47,7 +47,39 @@
             transform-origin: bottom;
         }
 
-        #sidebarLayout picture > img:hover {
-            transform: scale(1.4);
+            #sidebarLayout picture > img:hover {
+                transform: scale(1.4);
+            }
+
+    /* Join */
+
+    #joinForm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+        #joinForm > :first-child {
+            grid-column: 1/3;
         }
+
+        #joinForm > fieldset {
+            grid-column: 1/2;
+        }
+
+        #joinForm > section {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        #joinForm > input[type=submit] {
+            grid-column: 1/3;
+        }
+
+    input[type=submit] {
+        max-width: 8rem;
+    }
+
+    input:not([type=radio]), textarea {
+        max-width: 20rem;
+    }
 }

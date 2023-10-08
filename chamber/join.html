@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join | Rexburg Chamber of Commerce</title>
+    <meta name="description" content="Join the Rexburg Chamber of Commerce">
+    <meta name="author" content="Aaron Fox">
+    <meta property="og:title" content="Rexburg Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://katofett.github.io/wdd230/chamber/images/tetons.webp">
+    <meta property="og:url" content="https://katofett.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Karla">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/coc.png" alt="Rexburg CoC Logo">
+        <h1>Rexburg Chamber of Commerce</h1>
+        <button id="navMenu"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="spaced">
+            <h2>Join the Rexburg Chamber of Commerce!</h2>
+        </section>
+        <form id="joinForm" class="novalidate spaced" method="get" action="thankyou.html">
+            <p>Fields marked with * are required.</p>
+            <fieldset>
+                <legend>Applicant</legend>
+                <label>
+                    First Name*
+                    <input id="fname" type="text" name="fname" required>
+                </label>
+                <label>
+                    Last Name*
+                    <input id="lname" type="text" name="lname" required>
+                </label>
+                <label>
+                    Job Position or Title
+                    <input id="position" type="text" name="position" pattern="[a-zA-Z\-\s]{7,}">
+                </label>
+                <label>
+                    Email*
+                    <input id="email" type="email" name="email" required placeholder="example@email.com">
+                </label>
+                <label>
+                    Mobile Number*
+                    <input id="phone" type="tel" name="phone" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Business</legend>
+                <label>
+                    Business Name*
+                    <input id="businessname" type="text" name="businessname" required>
+                </label>
+                <label>
+                    Business Description
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <div>Membership Level*</div>
+                <label><input type="radio" name="membership" value="NP" required> Non-Profit</label>
+                <label><input type="radio" name="membership" value="Bronze" required> Bronze</label>
+                <label><input type="radio" name="membership" value="Silver" required> Silver</label>
+                <label><input type="radio" name="membership" value="Gold" required> Gold</label>
+            </fieldset>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <section class="spaced">
+                <h3 class="spaced">Membership Levels</h3>
+                <ul class="spaced">
+                    <li>
+                        <h4>Non-Profit ($0.00/mo.)</h4>
+                        <p>For non-profit organizations.</p>
+                    </li>
+                    <li>
+                        <h4>Bronze ($19.99/mo.)</h4>
+                        <p>Basic membership. Entry into all regular events.</p>
+                    </li>
+                    <li>
+                        <h4>Silver ($39.99/mo.)</h4>
+                        <p>All benefits from Bronze, plus access to exclusive events and the weekly business spotlight.</p>
+                    </li>
+                    <li>
+                        <h4>Gold ($69.99/mo.)</h4>
+                        <p>All benefits from Silver, plus dedicated business training and professional advising from licensed experts.</p>
+                    </li>
+                </ul>
+            </section>
+            <input type="submit" value="Join!">
+        </form>
+    </main>
+    <footer>
+        <h4>Rexburg Chamber of Commerce - WDD 230 Project</h4>
+        <p><a href="tel:1234567890">(123) 456-7890</a> &bull; <a href="mailto:rexburgcoc@hotmail.com">rexburgcoc@hotmail.com</a></p>
+        <p id="lastModified"></p>
+        <h4>&copy; Copyright Aaron Fox <span id="year"></span></h4>
+    </footer>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
