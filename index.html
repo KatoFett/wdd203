@@ -44,35 +44,17 @@
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activites</h3>
-            <ul>
-                <li>
-                    Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/KatoFett/pen/NWeaqWQ">JS Pen</a>
-                </li>
-                <li>
-                    Week 02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/KatoFett/pen/qBLpGYm">Hamburger Pen</a> | <a href="week02/bom.html">BoM</a>
-                </li>
-                <li>
-                    Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">localStorage</a>
-                </li>
-                <li>
-                    Week 04: <a href="https://codepen.io/KatoFett/pen/oNJQwpR">Pseudo-class</a> | <a href="week04/images/css-combinators.jpg">CSS Combinators</a> | <a href="week04/tablebuild.html">HTML Tables</a> | <a href="week04/form-start/index.html">Form</a>
-                </li>
-                <li>
-                    Week 05: <a href="https://codepen.io/KatoFett/pen/QWzPpyy">Pseudo Elements</a> | <a href="week05/new-ward-members.json">JSON</a> | <a href="week05/prophets.html">Fetch API</a> | <a href="week05/weather.html">Weather API</a>
-                </li>
-                <li>
-                    Week 06:
-                </li>
-                <li>
-                    Week 07:
-                </li>
-            </ul>
+            <ul id="links"></ul>
         </section>
         <section class="card">
             <h3>Information</h3>
             <div class="text-center">
                 <p>Rexburg, Idaho</p>
-                <p>76&deg; F - Sunshine</p>
+                <p id="current-temp"></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
                 <p>Page Visits: <span id="pageVisits"></span></p>
             </div>
         </section>
@@ -82,9 +64,8 @@
         <p>&copy; <span id="currentYear"></span> Aaron Fox &bull; United States</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/links.js"></script>
     <script src="scripts/dark.js"></script>
-    <script src="scripts/pageCounter.js"></script>
 </body>
 </html>
