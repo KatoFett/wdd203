@@ -1,0 +1,28 @@
+{
+  "familyName":  "Duncan",
+  "movedIn":  "1/16/21",
+  "memberCount":  4,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "Joshua",
+      "gender": "m",
+      "birthdate": "5/25/1994"
+    },
+    {
+      "name": "Miranda",
+      "gender": "f",
+      "birthdate": "8/7/1992"
+    },
+    {
+      "name": "Daniel",
+      "gender": "m",
+      "birthdate": "12/12/2017"
+    },
+    {
+      "name": "Corben",
+      "gender": "m",
+      "birthdate": "1/22/2019"
+    }
+  ]
+}
