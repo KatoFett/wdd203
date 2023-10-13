@@ -5,12 +5,13 @@ const links = document.querySelector('#links');
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
+    console.table(data);
     displayLinks(data);
 }
 
 function displayLinks(data) {
     // Iterate through each week.
-    for (week in data.weeks) {
+    for (const week of data.weeks) {
         let li = document.createElement('li');
 
         // Add week: text
@@ -19,7 +20,7 @@ function displayLinks(data) {
 
         // Iterate through each link.
         let appendSeparator = false;
-        for (link in week.links) {
+        for (const link of week.links) {
 
             // Add separator
             if (appendSeparator) {
@@ -29,7 +30,7 @@ function displayLinks(data) {
 
             // Create link
             let a = document.createElement('a');
-            a.setAttribute('href', `${baseURL}${link.url}`);
+            a.setAttribute('href', link.url);
             a.textContent = link.title;
 
             // Add link
