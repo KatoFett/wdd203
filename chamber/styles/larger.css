@@ -82,4 +82,22 @@
     input:not([type=radio]), textarea {
         max-width: 20rem;
     }
+
+    /* Directory */
+
+    #grid.list {
+        text-align: left;
+        display: block;
+        grid-template-columns: none;
+    }
+
+        #grid.list > .card {
+            display: grid;
+            grid-template: auto auto auto auto / 1fr auto;
+        }
+
+            #grid.list > .card > img {
+                grid-row: 1/6;
+                grid-column: 2/3;
+            }
 }

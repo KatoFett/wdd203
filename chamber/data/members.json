@@ -9,6 +9,14 @@
       "membership": "Gold"
     },
     {
+      "name": "Rexburg Parking Enforcement",
+      "address": "1234 EVERYWHERE Rd, Rexburg, ID 83440",
+      "phone": "(555) 235-3298",
+      "website": "https://www.unruly-parking.com/save-me/",
+      "image": "rexburg_parking_enforcement.webp",
+      "membership": "Bronze"
+    },
+    {
       "name": "Cathy's Croissants",
       "address": "648 W 3rd S, Rexburg, ID 83440",
       "phone": "(243) 653-4805",
@@ -38,14 +46,6 @@
       "phone": "(800) 494-1846",
       "website": "https://bohdan-machacek.com/about/",
       "image": "bohdan_machacek.webp",
-      "membership": "Bronze"
-    },
-    {
-      "name": "Rexburg Parking Enforcement",
-      "address": "1234 EVERYWHERE Rd, Rexburg, ID 83440",
-      "phone": "(555) 235-3298",
-      "website": "https://www.unruly-parking.com/save-me/",
-      "image": "rexburg_parking_enforcement.webp",
       "membership": "Bronze"
     },
     {
