@@ -1,0 +1,60 @@
+﻿{
+  "members": [
+    {
+      "name": "Barnum Logistics",
+      "address": "112 E 2nd N, Rexburg, ID 83440",
+      "phone": "(651) 336-1341",
+      "website": "https://barnum_logistics.com/",
+      "image": "barnum_logistics.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Cathy's Croissants",
+      "address": "648 W 3rd S, Rexburg, ID 83440",
+      "phone": "(243) 653-4805",
+      "website": "https://www.cathycroissants.com/",
+      "image": "cathys_croissants.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Crooks For Hire",
+      "address": "462 University Blvd, Rexburg, ID 83440",
+      "phone": "(352) 165-3521",
+      "website": "https://www.cfh.org/en-us",
+      "image": "cfh.webp",
+      "membership": "NonProfit"
+    },
+    {
+      "name": "Money-Mart",
+      "address": "981 W 1st S, Rexburg, ID 83440",
+      "phone": "(839) 197-6629",
+      "website": "https://www.moneymart.com/en-us/",
+      "image": "money_mart.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Bohdan Macháček Law Firm",
+      "address": "1210 North 2nd East, Rexburg, ID 83440",
+      "phone": "(800) 494-1846",
+      "website": "https://bohdan-machacek.com/about/",
+      "image": "bohdan_machacek.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Rexburg Parking Enforcement",
+      "address": "1234 EVERYWHERE Rd, Rexburg, ID 83440",
+      "phone": "(555) 235-3298",
+      "website": "https://www.unruly-parking.com/save-me/",
+      "image": "rexburg_parking_enforcement.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Putricide Plague Foundation",
+      "address": "110 Upper Spire, Icecrown, Northrend 23932",
+      "phone": "(284) 277-6923",
+      "website": "https://www.putricide-plagues.com/",
+      "image": "putricide_plague.webp",
+      "membership": "Gold"
+    }
+  ]
+}
