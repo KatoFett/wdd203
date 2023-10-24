@@ -18,8 +18,8 @@
 </head>
 <body>
     <header>
-        <img src="images/coc.png" alt="Rexburg CoC Logo">
-        <h1>Rexburg Chamber of Commerce</h1>
+        <a href="index.html"><img src="images/coc.png" alt="Rexburg CoC Logo"></a>
+        <h1><a href="index.html">Rexburg Chamber of Commerce</a></h1>
         <button id="navMenu"></button>
     </header>
     <nav>
@@ -30,6 +30,10 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <div id="banner">
+        <span>We invite you to attend our Chamber of Commerce Meet and Greet on Wednesday @ 7:00 p.m.</span>
+        <a id="close-banner" href="#">&times;</a>
+    </div>
     <main>
         <section id="hero">
             <h2>Rexburg Chamber of Commerce</h2>
@@ -41,40 +45,38 @@
         </section>
         <section id="spotlight">
             <h2>Business Spotlight</h2>
-            <div class="card">
-                <p>One man's trash is another man's treasure.</p>
-                <strong>McDonald's</strong>
-                <img src="images/mcdonalds.webp" alt="McDonald's building">
-            </div>
-            <div class="card">
-                <p>A labyrinth of aisles with misplaced items, guaranteed to hide that one item you need.</p>
-                <strong>Wal-Mart</strong>
-                <img src="images/walmart.webp" alt="Wal-Mart logo">
-            </div>
         </section>
         <div id="promotions">
             <section id="upcomingEvents">
                 <h2>Upcoming Events</h2>
                 <div>
-                    <img src="images/event01" alt="Event picture">
+                    <img src="images/event1.webp" width="120" height="120" loading="lazy" alt="Event picture">
                     <h3>Event Title</h3>
                     <h4>August 25, 2023 8:00am - 9:00am</h4>
                     <h4>6523 Somewhere Ln</h4>
-                    <p>Come join us and do something. We'll have Little Caesar's and not enough tables.</p>
+                    <p>Come join us and do something. We'll have Little Caesar's, lemonade obviously, and not enough tables.</p>
                 </div>
                 <div>
-                    <img src="images/event02" alt="Event picture">
+                    <img src="images/event2.webp" width="120" height="120" loading="lazy" alt="Event picture">
                     <h3>Trick or Treating</h3>
-                    <h4>October 30, 2023 7:00pm - 2:30am</h4>
+                    <h4>October 30, 2023 7:00pm - 4:30am</h4>
                     <h4>7982 Spooky Rd</h4>
-                    <p>Yes, we will be trick-or-treating for over 6 hours consecutively. Doors will be closed and locked until the event is over.</p>
+                    <p>Yes, we will be trick-or-treating for over <strong>7 hours consecutively</strong>. Doors will be closed and locked until the event is over.</p>
                 </div>
             </section>
             <section id="weather">
-                <h2>Weather</h2>
-                <img src="https://accuweather.com/images/weathericons/1.svg" alt="Sunny">
-                <h3>61&deg;F</h3>
-                <h3>Sunny, 70% humidity</h3>
+                <h2>Rexburg Weather</h2>
+                <div class="day-weather">
+                    <h4>Today</h4>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p></p>
+                </div>
+                <hr>
+                <h4>3-Day Forecast</h4>
+                <ol id="forecast"></ol>
             </section>
         </div>
     </main>
@@ -86,5 +88,6 @@
     </footer>
     <script src="scripts/footer.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
